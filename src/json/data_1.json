@@ -1,0 +1,75 @@
+{
+  "lista_mail": {
+    "name":"Lista de Mail",
+    "default":"puntoswellness",
+    "type":"multipleChoise",
+    "content":{
+      "puntoswellness":{
+        "name":"PuntoWellness",
+        "value":{
+          "desincripcion":"http://puntoswellness.cl/index.php?option=com_tmnewsletter&view=subscription&i=!*ID*!&e=!*EMAIL_TO*!&k=!*NEWSLETTERKEY*!",
+          "logo":{
+            "pagina": "http://www.puntoswellness.cl",
+            "imagen": "http://www.puntoswellness.cl/images/navideno/logo.png",
+            "alt": "PuntosWellness"
+          }
+        }
+      },
+      "emedica":{
+        "name":"Emédica",
+        "value":{
+          "desincripcion":"http://emedica.cl/index.php?option=com_tmnewsletter&view=subscription&i=!*ID*!&e=!*EMAIL_TO*!&k=!*NEWSLETTERKEY*!",
+          "logo":{
+            "pagina": "http://www.emedica.cl",
+            "imagen": "http://tienda.puntoswellness.cl/images/comercios_asociados/2/logos/logo-clinica-estetika-medica_400.png",
+            "alt": "Clínica Estétika Médica"
+          }
+        }
+      }
+    }
+  },
+  "productos": {
+    "name": "Productos",
+    "default": {},
+    "type": "groupList",
+    "var": {
+      "title":{
+        "name": "Título",
+        "default": "",
+        "type": "simple"
+      },
+      "price1":{
+        "name": "Precio",
+        "default": "",
+        "type": "simple"
+      },
+      "price2":{
+        "name": "Precio con descuento",
+        "default": "",
+        "type": "simple"
+      },
+      "src":{
+        "name":"URL imagen",
+        "default": "",
+        "type": "url",
+        "url": "http://www.puntoswellness.cl/images/"
+      },
+      "alt":{
+        "name": "ALT producto",
+        "default": "",
+        "type": "simple"
+      },
+      "href":{
+        "name":"URL producto",
+        "default": "",
+        "type": "url",
+        "url": "http://tienda.puntoswellness.cl/product_info.php?products_id="
+      },
+      "text":{
+        "name": "Texto Producto",
+        "default" :"",
+        "type":"simple"
+      }
+    }
+  }
+}

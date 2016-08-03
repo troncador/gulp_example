@@ -1,0 +1,60 @@
+[
+  "test",
+  {
+    "key": "title"
+  },
+  {
+    "key": "mailList",
+    "type": "radios",
+    "titleMap": [
+      {
+        "name": "Lista Puntoswellness",
+        "value": {
+          "desincripcion":"http://puntoswellness.cl/index.php?option=com_tmnewsletter&view=subscription&i=!*ID*!&e=!*EMAIL_TO*!&k=!*NEWSLETTERKEY*!",
+          "logo":{
+            "pagina": "http://www.puntoswellness.cl",
+            "imagen": "http://www.puntoswellness.cl/images/navideno/logo.png",
+            "alt": "PuntosWellness"
+          }
+        }
+      },
+      {
+        "name":"Emédica",
+        "value":{
+          "desincripcion":"http://emedica.cl/index.php?option=com_tmnewsletter&view=subscription&i=!*ID*!&e=!*EMAIL_TO*!&k=!*NEWSLETTERKEY*!",
+          "logo":{
+            "pagina": "http://www.emedica.cl",
+            "imagen": "http://tienda.puntoswellness.cl/images/comercios_asociados/2/logos/logo-clinica-estetika-medica_400.png",
+            "alt": "Clínica Estétika Médica"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "key": "comments",
+    "type": "tabarray",
+    "add": "New",
+    "remove": "Delete",
+    "style": {
+      "remove": "btn-danger"
+    },
+    "title": "{{ value.aaa || 'Tab '+$index }}",
+    "items": [
+      "comments[].aaa",
+      {
+        "key": "comments[].oldPrice",
+        "type": "text"
+      },
+      {
+        "key": "comments[].comment",
+        "type": "ckeditor"
+      }
+    ]
+  },
+  {
+    "type": "submit",
+    "style": "btn-info",
+    "title": "OK"
+  }
+]

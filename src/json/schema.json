@@ -1,0 +1,43 @@
+{
+  "type": "object",
+  "title": "Comment",
+  "properties": {
+    "title": {
+      "title": "Title",
+      "type": "string",
+      "required":true
+    },
+    "mailList": {
+      "title": "Mail List",
+      "type": "object"
+    },
+    "comments": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "aaa": {
+            "title": "Name",
+            "type": "string"
+          },
+          "title": {
+            "title": "oldPrice",
+            "type": "number"
+          },
+          "comment": {
+            "title": "Comment",
+            "type": "string",
+            "maxLength": 20,
+            "validationMessage": "Don't be greedy!"
+          }
+        },
+        "required": [
+          "name",
+          "email",
+          "comment"
+        ]
+      }
+    }
+  },
+  "required": [  ]
+}
